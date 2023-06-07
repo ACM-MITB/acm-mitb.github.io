@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACM</title>
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/output.css" />
+        <link rel="stylesheet" href="./styles/all.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <nav
+            class="py-4 px-10 flex justify-between items-center fixed top-0 w-screen z-40 bg-black lap:px-4"
+        >
+            <h2 class="font-mono text-sm w-1/3 lap:text-xs tab:w-1/2">
+                MITB ACM STUDENT CHAPTER
+            </h2>
+
+            <div
+                class="links right-menu flex justify-center items-center w-1/3 tab:fixed tab:top-0 tab:-right-full tab:bg-slate-600 tab:flex-col tab:h-screen tab:w-2/3"
+            >
+                <a
+                    class="font-mono px-6 tab:my-6"
+                    onclick="toggle()"
+                    href="/#index"
+                    >home</a
+                >
+                <a
+                    class="font-mono px-6 tab:my-6"
+                    onclick="toggle()"
+                    href="/#about"
+                    >about</a
+                >
+                <a
+                    class="font-mono px-6 tab:my-6"
+                    onclick="toggle()"
+                    href="/rust.html"
+                    >events</a
+                >
+                <a
+                    class="font-mono px-6 tab:my-6"
+                    onclick="toggle()"
+                    href="/#team"
+                    >team</a
+                >
+            </div>
+
+            <a
+                href="https://acm-white.netlify.app"
+                class="w-1/3 flex justify-end tab:w-1/2"
+            >
+                <img
+                    class="w-14 h-14 tab:w-8 tab:h-8 tab:mr-10"
+                    src="./assets/q.png"
+                    alt=""
+                />
+            </a>
+            <i
+                class="fa fa-bars !hidden tab:!inline z-20"
+                onclick="toggle()"
+            ></i>
+        </nav>
+
+        <div
+            class="w-screen flex px-24 pt-60 bph:flex-col bph:items-center bph:pt-48 bph:px-10"
+            id="index"
+            data-aos="fade-up"
+        >
+            <img
+                src="./assets/play-logo.png"
+                alt=""
+                class="object-scale-down lap:w-1/3 bph:w-96 bph:mb-10"
+            />
+            <div class="pl-36 bph:pl-0 flex flex-col items-center">
+                <audio
+                    src="/assets/tune.mp3"
+                    autoplay
+                    style="display: none"
+                ></audio>
+                <h4
+                    class="text-blue text-7xl bph:text-center font-mono blap:text-6xl lap:text-4xl bph:text-3xl"
+                >
+                    <span class="text-orange">Players of</span><br />the Future
+                </h4>
+                <button
+                    class="btn font-mono bg-lightblue text-2xl px-6 py-4 border-8 border-white mt-14 blap:text-xl lap:text-lg lap:px-4 lap:py-3 lap:border-4 bph:mt-8"
+                >
+                    Join Us
+                </button>
+            </div>
+        </div>
+        <img
+            src="./assets/mario.gif"
+            alt="mario"
+            class="mt-20 mb-32 bph:my-4"
+        />
+
+        <div
+            class="w-screen px-40 pt-20 mb-60 lap:mb-32 lap:px-14 bph:px-6 bph:mb-10"
+            id="about"
+            data-aos="fade-up"
+        >
+            <div class="flex justify-between bph:flex-col">
+                <div class="text-content">
+                    <h4
+                        class="text-orange font-mono text-5xl blap:text-4xl lap:text-2xl"
+                    >
+                        Association for<br />Computing Machinery
+                    </h4>
+                    <p
+                        class="mt-10 w-10/12 tracking-wide leading-relaxed text-lg lap:text-sm lap:mt-4 bph:w-full"
+                    >
+                        In 1952, the Association for Computing Machinery (ACM)
+                        was founded in New York City with a common goal of
+                        sharing and advancing computer technology. It is the
+                        largest professional association for computer
+                        professionals in the world. In the past, the ACM was
+                        created by computer scientists interested in sharing and
+                        advancing computer technology. Today, anyone interested
+                        in computer science can become a member.
+                    </p>
+                </div>
+                <img
+                    class="w-80 object-scale-down"
+                    src="./assets/logo-lightblue.png"
+                    alt=""
+                />
+            </div>
+
+            <div class="flex justify-between mt-20 bph:flex-col">
+                <div class="text-content">
+                    <h4
+                        class="text-orange font-mono text-5xl blap:text-4xl lap:text-2xl"
+                    >
+                        What is
+                        <span class="text-lightblue">ACM at MITB</span
+                        >&nbsp;<span class="text-blue">?</span>
+                    </h4>
+                    <p
+                        class="mt-10 w-10/12 tracking-wide leading-relaxed text-lg lap:text-sm lap:mt-4 bph:w-full"
+                    >
+                        ACM's Student Chapter at MITB serves as a venue for
+                        students to learn about computer science together. There
+                        are plenty of opportunities for networking among our
+                        members, as well as technical and non-technical
+                        activities. Our members participate in both technical
+                        and non-technical activities. The officers listed on the
+                        website can be reached if you're interested in joining
+                        the chapter or volunteering at an event.
+                    </p>
+                </div>
+                <img
+                    class="w-80 object-scale-down bph:mt-6"
+                    src="./assets/play-logo.png"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <div
+            class="w-screen px-40 pt-10 lap:px-14 bph:px-6"
+            id="team"
+            data-aos="fade-up"
+        >
+            <h4
+                class="text-6xl blap:text-4xl text-lightblue font-mono bph:text-2xl"
+            >
+                The office bearers
+            </h4>
+            <p class="font-mono text-xl mt-4">2022-23</p>
+
+            <div class="members w-full flex flex-wrap mt-16 bph:mt-10">
+                <div class="flex flex-wrap justify-center">
+                    <img
+                        class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                        src="./assets/members/gururaj.png"
+                        alt=""
+                    />
+                    <img
+                        class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                        src="./assets/members/Rashmi.png"
+                        alt=""
+                    />
+                    <img
+                        class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                        src="./assets/members/advay.png"
+                        alt=""
+                    />
+                </div>
+
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/achyut.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/srin.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/shashank.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/prakhar.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/aditya.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/vedang.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/sreya.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/kartik.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/divya.png"
+                    alt=""
+                />
+                <img
+                    class="w-1/2 px-20 mb-14 bph:px-6 bph:w-full"
+                    src="./assets/members/prince.png"
+                    alt=""
+                />
+            </div>
+
+            <h4
+                class="text-6xl blap:text-4xl text-lightblue font-mono mt-32 bph:text-2xl bph:mt-10"
+            >
+                The members
+            </h4>
+            <p class="font-mono text-xl mt-4 bph:text-base">2022-23</p>
+            <div
+                class="flex font-mono px-4 text-lg mt-10 mb-20 lap:text-base bph:flex-col"
+            >
+                <div class="w-1/2 bph:w-full bph:text-xs">
+                    -Samarth Asija
+                    <div class="py-1"></div>
+                    -Varun Mahant
+                    <div class="py-1"></div>
+                    -Jaikrishna
+                    <div class="py-1"></div>
+                    -Shiv Bhargava
+                    <div class="py-1"></div>
+                    -Mohammed Fazil Hussain
+                    <div class="py-1"></div>
+                    -Heet Soni
+                    <div class="py-1"></div>
+                    -Aditya Pandey
+                    <div class="py-1"></div>
+                    -Anumeha Srivastava
+                    <div class="py-1"></div>
+                    -Ervin Castelino
+                    <div class="py-1"></div>
+                    -Devanshu Anup Bagadia
+                    <div class="py-1"></div>
+                    -Harini Nagarajan
+                    <div class="py-1"></div>
+                    -Vibha Karen Dsouza
+                    <div class="py-1"></div>
+                    -Yukta Pareek
+                    <div class="py-1"></div>
+                    -Atharva Sajanikar
+                    <div class="py-1"></div>
+                    -Vedant Palekar
+                    <div class="py-1"></div>
+                    -Divyom Anand
+                    <div class="py-1"></div>
+                    -Vishal Bharat
+                </div>
+
+                <div class="w-1/2 bph:w-full bph:text-xs">
+                    <div class="py-1"></div>
+                    -Rochak Saini
+                    <div class="py-1"></div>
+                    -Arnav Puri
+                    <div class="py-1"></div>
+                    -Haiya Shah
+                    <div class="py-1"></div>
+                    -JLVS Bhumika
+                    <div class="py-1"></div>
+                    -Rutvik Jagtap
+                    <div class="py-1"></div>
+                    -Srujan
+                    <div class="py-1"></div>
+                    -Sarthak Jaryal
+                    <div class="py-1"></div>
+                    -Parth Jain
+                    <div class="py-1"></div>
+                    -Mohana Misra
+                    <div class="py-1"></div>
+                    -Anshitha Reddy Kothamidde
+                    <div class="py-1"></div>
+                    -Tusharjyoti Barman
+                    <div class="py-1"></div>
+                    -Aaditi Singh
+                    <div class="py-1"></div>
+                    -M. Niteesh Reddy
+                    <div class="py-1"></div>
+                    -Kshitij Srivastava
+                    <div class="py-1"></div>
+                    -Kartik Mittal
+                    <div class="py-1"></div>
+                    -Bonam Sai Sreya
+                    <div class="py-1"></div>
+                    -Akshit Reddy Ireddy
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-20 bg-white text-black">
+            <div class="flex justify-between items-center bph:flex-col px-12">
+                <div class="flex-col text-white px-10 py-10">
+                    <img src="/assets/play-logo.png" alt="" class="w-96" />
+                    <div
+                        class="flex space-x-14 px-12 py-3 bph:space-x-0 bph:px-0 bph:justify-center"
+                    >
+                        <ul class="space-x-12 mt-10 bph:space-x-0">
+                            <a class="font-mono text-black bph:px-2" href="/"
+                                >Home</a
+                            >
+                            <a
+                                class="font-mono text-black bph:px-2"
+                                href="/#about"
+                                >About</a
+                            >
+                            <a
+                                class="font-mono text-black bph:px-2"
+                                href="/rust.html"
+                                >Events</a
+                            >
+                            <a
+                                class="font-mono text-black bph:px-2"
+                                href="/#team"
+                                >Team</a
+                            >
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div
+                        class="flex py-4 pl-20 bph:px-0 bph:justify-center bph:py-4"
+                    >
+                        <a href="/"
+                            ><img
+                                class="w-10 h-10 bph:w-8 bph:h-8 mr-10"
+                                src="/assets/logos/instagram 2.png"
+                                alt=""
+                        /></a>
+                        <a href="/"
+                            ><img
+                                class="w-10 h-10 bph:w-8 bph:h-8 mr-10"
+                                src="/assets/logos/linkedin 1.png"
+                                alt=""
+                        /></a>
+                        <a href="/"
+                            ><img
+                                class="w-12 h-10 bph:w-10 bph:h-8 mr-10"
+                                src="/assets/logos/Linktree.png"
+                                alt=""
+                        /></a>
+                        <a href="/"
+                            ><img
+                                class="w-12 h-10 bph:w-10 bph:h-8 mr-10"
+                                src="/assets/logos/twitter 1.png"
+                                alt=""
+                        /></a>
+                    </div>
+                    <p class="font-mono text-black mt-10">
+                        Reach us at
+                        <span class="text-blue">acm.mitblr</span>@<span
+                            class="text-orange"
+                            >manipal.edu</span
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex w-full font-mono justify-center items-center text-black text-center font-medium py-3 bph:text-xs"
+            >
+                Made with &lt;3 by Advay Inabathini and Prakhar Khurana
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                delay: 300,
+                once: true,
+            });
+        </script>
+        <script>
+            function toggle() {
+                document
+                    .querySelector(".right-menu")
+                    .classList.toggle("!right-0");
+            }
+        </script>
+    </body>
+</html>

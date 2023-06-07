@@ -1,0 +1,9 @@
+{
+    "name": "acm",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "tail": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+    }
+}
