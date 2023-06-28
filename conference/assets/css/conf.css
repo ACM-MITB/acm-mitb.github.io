@@ -37,3 +37,17 @@ section {
     /* margin-top: 1rem; */
     font-weight: 500;
 }
+
+.navbar-nav .nav-item .nav-link {
+    color: #0031B0 !important;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    font-size: 7.5rem;
+    margin-bottom: -1rem;
+}
