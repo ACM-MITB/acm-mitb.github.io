@@ -1,0 +1,13 @@
+.bg-light {
+    background-color: transparent !important;
+}
+
+.scrolled {
+    background-color: white !important;
+}
+
+.navbar-nav .nav-item {
+    padding: 0rem 1rem;
+    /* margin-top: 1rem; */
+    font-weight: 500;
+}
