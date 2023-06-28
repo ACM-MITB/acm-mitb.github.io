@@ -20,6 +20,13 @@
 $(window).scroll(function() {
     $("nav").toggleClass("scrolled", $(this).scrollTop() > 50)
 }),
+
+// $(".home").css({ height: $(window).height() + "px" });
+
+// $(window).on("resize", function() {
+//   $(".home").css({ height: $(window).height() + "px" });
+// });
+
 // $(document).ready(function() {
 //     $("#nav-icon4").click(function() {
 //         $(this).toggleClass("open")
@@ -56,7 +63,5 @@ $(window).scroll(function() {
 //     interval: 7e3,
 //     ride: "carousel"
 // }),
-console.log("Hello there, fellow Inspector"),
-console.log("Welcome to BookSyndy's website, designed and developed by Advay Sai Inabathini"),
-console.log("."),
-console.log("BookSyndy was founded by Shlok Sushil Jhawar");
+
+console.log('im alive')

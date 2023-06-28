@@ -1,6 +1,21 @@
 body{
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
+
+section {
+    overflow: hidden;
+    display: block;
+    height: 100vh;
+}
+
+.home {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .bg-light {
     background-color: transparent !important;
 }
