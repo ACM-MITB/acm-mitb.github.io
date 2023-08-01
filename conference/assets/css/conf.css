@@ -55,10 +55,16 @@ section {
 }
 
 .about h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
+    color: #0031B0;
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    color: #279AF1;
+}
+
+.about img {
+    width: 80%;
 }
