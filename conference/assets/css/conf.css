@@ -68,3 +68,18 @@ section {
 .about img {
     width: 80%;
 }
+
+.mitb img {
+    width: 60%;
+}
+
+.mitb h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0031B0;
+}
+
+.mitb p {
+    font-size: 1.4rem;
+    color: #279AF1;
+}
