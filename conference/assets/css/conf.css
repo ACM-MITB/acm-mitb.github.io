@@ -7,7 +7,7 @@ body{
 section {
     overflow: hidden;
     display: block;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .home {
