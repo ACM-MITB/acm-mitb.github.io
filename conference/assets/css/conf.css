@@ -87,3 +87,34 @@ section {
 .organisers {
     background-color: #279AF1;
 }
+
+.organisers h1{
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 2rem 0rem 1.5rem 0rem
+}
+
+.organisers h2{
+    color: white;
+    margin: 1rem 0rem 1rem 0rem;
+    font-weight: bold;
+}
+
+.organisers .person {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.organisers h4 {
+    color: #0031B0;
+    font-weight: 600;
+}
+
+.organisers h6 {
+    color: white;
+    font-size: 0.75rem;
+}
+
+.organisers .row {
+    margin: 2rem 0rem 2rem 0rem;
+}
